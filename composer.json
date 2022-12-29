@@ -14,8 +14,8 @@
         "php": "^8.1",
         "composer/installers": "^1.9",
         "deployer/deployer": "^7.0",
-        "drupal/core-composer-scaffold": "^9.4",
-        "drupal/core-recommended": "^9.4",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-recommended": "^10",
         "drush/drush": "^11.2",
         "vlucas/phpdotenv": "^5.4"
     },
@@ -82,7 +82,6 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "patch -p1 -N -t -d web/sites/default < patches/default-settings.patch || true"
         ]
     }
 }
